@@ -9,6 +9,13 @@ public class Observer : MonoBehaviour
     
     bool m_IsPlayerInRange;
 
+    private ShieldController playerShield;
+
+    private void Start()
+    {
+        playerShield = GameObject.Find("JohnLemon").GetComponent<ShieldController>();
+    }
+
     void OnTriggerEnter (Collider other)
     {
         if(other.transform == player)
@@ -37,7 +44,15 @@ public class Observer : MonoBehaviour
             {
                 if(raycastHit.collider.transform == player)
                 {
-                    gameEnding.CaughtPlayer ();
+                    if (playerShield.shieldState)
+                    {
+                        playerShield.DeactivateShield();
+                        Destroy(transform.parent.gameObject);
+                    }
+                    else
+                    {
+                        gameEnding.CaughtPlayer();
+                    }
                 }           
             }
         }

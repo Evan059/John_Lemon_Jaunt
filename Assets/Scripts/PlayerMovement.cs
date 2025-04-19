@@ -34,9 +34,7 @@ public class PlayerMovement : MonoBehaviour
         bool isWalking = hasHorizontalInput || hasVerticalInput;
         m_Animator.SetBool("IsWalking", isWalking);
 
-        bool sprinting = Input.GetKey(KeyCode.LeftShift);
-
-        if (sprinting)
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             m_Animator.speed = 2;
             m_AudioSource.pitch = 2f;
