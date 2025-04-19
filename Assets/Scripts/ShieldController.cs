@@ -12,7 +12,7 @@ public class ShieldController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        shield = GameObject.Find("Shield capsule");
+        shield = GameObject.Find("Shield");
         shield.SetActive(false);
     }
 

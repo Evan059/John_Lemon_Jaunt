@@ -61,8 +61,8 @@
     <Compile Include="Assets\Scripts\GameEnding.cs" />
     <Compile Include="Assets\Scripts\WaypointPatrol.cs" />
     <Compile Include="Assets\Scripts\Observer.cs" />
-    <Compile Include="Assets\Scripts\LightFlicker.cs" />
     <Compile Include="Assets\Scripts\ShieldController.cs" />
+    <Compile Include="Assets\Scripts\LightFlicker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3DBeginner_Third-PartyNotice.txt" />
