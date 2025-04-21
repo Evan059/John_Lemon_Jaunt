@@ -10,8 +10,6 @@ Team Members:
 
 · Tyler Wong
 
-*Write about the project modifications here*
-
 Holding SHIFT will make the player move faster.
 
 Shield powerups can be found around the level that give a player a shield, contacting an enemy while having the shield will destroy the enemy.
